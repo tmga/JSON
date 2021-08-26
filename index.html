@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Example</title>
+</head>
+<body>
+    <script type="text/javascript">
+    //Kdyz JSON uvedu do `` tak uz to neni objekt ale string, zpatky na objekty to prevedu funkci JSON.parse
+    let companies =
+    `[
+        {
+            "name": "Big Corporation",
+            "numberOffEmployees": 10000,
+            "ceo": "Alex",
+            "rating": 3.6
+        },
+        {
+            "name": "Small Startup",
+            "numberOffEmployees": 3,
+            "ceo": null,
+            "rating": 4.3
+        }
+    ]`
+
+    //console.log(JSON.parse(companies));
+    console.log(JSON.parse(companies)[0].name);
+
+    </script>
+</body>
+</html>
